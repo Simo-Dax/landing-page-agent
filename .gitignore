@@ -1,0 +1,24 @@
+# Secrets / local config (mai committare)
+.env
+.env.local
+.env.*.local
+.claude/settings.local.json
+credentials.json
+token.json
+
+# Tool caches / state
+.firecrawl/
+.impeccable/
+.obsidian/
+.tmp/
+.vercel/
+
+# Per-client output (non si condivide)
+output/
+
+# OS / build
+.DS_Store
+node_modules/
+.next/
+__pycache__/
+*.pyc

@@ -1,0 +1,29 @@
+{
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'KICKOFF ENGINE — leggi LEARNINGS.md (lezioni da applicare) + ROADMAP.md (stato/prossimi step). Prima di produrre output: carica CLAUDE.md, tone_of_voice e business_strategy. Chiedi all utente cosa vuole costruire e quali credenziali ha gia pronte.'"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"let s='';process.stdin.on('data',c=>s+=c).on('end',()=>{try{const p=(JSON.parse(s).tool_input||{}).file_path||'';if(/[.]claude\\/(agents|commands|skills)\\/|directives\\//.test(p))console.log('↩︎ Hai modificato un file engine. Verifica che la mappatura fase→command→skill/directive in CLAUDE.md e i sub-agent collegati siano ancora coerenti.');}catch(e){}})\""
+          }
+        ]
+      }
+    ]
+  }
+}
