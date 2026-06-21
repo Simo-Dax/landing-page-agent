@@ -2,6 +2,8 @@
 
 Engine riusabile per progettare e costruire landing page, mini-site e web-app ad alta conversione: dalla strategia al copy, dal design system al build, fino a deploy e analytics. Gira dentro **Claude Code**.
 
+> 🚀 **Nuovo qui? Parti da [`ONBOARDING.md`](ONBOARDING.md)** — guida passo-passo (VS Code + Claude Code) per scaricare e usare il template.
+
 ## Com'è fatto (template a due livelli)
 - **Engine riusabile** (non cambia tra progetti): `CLAUDE.md`, `directives/`, `.claude/` (agents, commands, skills), `.mcp.json`, `FRAMEWORK.md`, `execution/`, `CONNECTORS.md`.
 - **Brand layer per-cliente** (vuoto nel template, da riempire): `PRODUCT.md`, `DESIGN.md`, `context/` (identità, tone of voice, reference).
