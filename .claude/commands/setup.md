@@ -18,7 +18,7 @@ Leggi prima di tutto:
 - `context/brand/anti-ai-writing-style.md`
 - `PRODUCT.md` (utenti, brand personality, anti-references, design principles)
 - `directives/00_cro_principles.md`
-- `directives/index.md` (mappa di directives e skill)
+- `directives/orchestrator_index.md` (mappa di directives e skill)
 
 Se questi file non esistono o sono vuoti, fermati e segnalalo.
 

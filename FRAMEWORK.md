@@ -57,7 +57,7 @@ Bootstrap dell'agente, non per-progetto.
 ### Fase 1 — Brief & Discovery  ⟦GATE⟧
 Definisci il problema prima di qualsiasi output.
 - **Input:** richiesta del cliente.
-- **Output:** brief CRO (obiettivo, audience, sorgente traffico, offerta, KPI primario, vincoli). Salvato in `projects/<cliente>/brief/`.
+- **Output:** brief CRO (obiettivo, audience, sorgente traffico, offerta, KPI primario, vincoli). Salvato in `output/<slug>/brief/`.
 - **Gate:** nessun output prosegue senza brief approvato.
 - **Comando:** `/setup`
 - **Skill/MCP:** `directives/01_landing_brief`, `directives/08_grill_me` (se requisiti vaghi).
@@ -86,7 +86,7 @@ Token + regole, esportabili in HTML.
 ### Fase 5 — Architettura & Wireframe
 Struttura sezioni, gerarchia informativa, above-the-fold.
 - **Input:** brief + design system.
-- **Output:** architettura testuale / wireframe in `projects/<cliente>/brief/`.
+- **Output:** architettura testuale / wireframe in `output/<slug>/brief/`.
 - **Gate:** approvazione architettura prima del build.
 - **Comando:** `/wireframe`
 - **Skill/MCP:** `directives/05_frontend_design`, `directives/09_marketing_psychology`, Figma MCP.
@@ -94,14 +94,14 @@ Struttura sezioni, gerarchia informativa, above-the-fold.
 ### Fase 6 — Copy & content
 Headline, sezioni, microcopy, CRO, anti-AI.
 - **Input:** architettura + brand voice.
-- **Output:** copy per blocco in `projects/<cliente>/copy/`.
+- **Output:** copy per blocco in `output/<slug>/copy/`.
 - **Comando:** `/copy`
 - **Skill/MCP:** `copywriting`, `copy-editing`, `marketing-psychology`, `directives/02_headline_optimization`, `directives/10_advanced_copywriting`, `context/brand/anti-ai-writing-style.md`.
 
 ### Fase 7 — Build
 Sviluppa la pagina/sito nel design system.
 - **Input:** architettura + design system + copy.
-- **Output:** HTML/CSS statico self-contained, o app Next.js. In `projects/<cliente>/build/`.
+- **Output:** HTML/CSS statico self-contained, o app Next.js. In `output/<slug>/build/`.
 - **Comando:** `/build`
 - **Skill/MCP:** `directives/05_frontend_design`, `directives/06_web_artifacts`, `ui-styling`, `impeccable`, `directives/11_framer_motion`.
 
@@ -276,9 +276,9 @@ Più pagine costruiamo, più gli agenti migliorano.
 
 Per un collega che parte da zero:
 1. `git clone` del template.
-2. Installare le skill/plugin pesanti via marketplace (impeccable, ui-ux-pro-max, firecrawl, the-ai-ad-lab) — vedi lista in `directives/index.md`.
+2. Installare le skill/plugin pesanti via marketplace (impeccable, ui-ux-pro-max, firecrawl, the-ai-ad-lab) — vedi lista in `directives/orchestrator_index.md`.
 3. Copiare `.env.example` → `.env` e inserire le chiavi (firecrawl, clerk, supabase, email tool, vercel).
 4. Connettori in `.mcp.json` (chiavi via env).
 5. Lanciare `/setup` per il primo progetto.
 
-Principio cartelle: engine pulito e brand-agnostic; ogni cliente è una cartella in `projects/` (o un clone separato del template). I segreti non si committano mai.
+Principio cartelle: engine pulito e brand-agnostic; ogni cliente è una cartella in `output/` (o un clone separato del template). I segreti non si committano mai.

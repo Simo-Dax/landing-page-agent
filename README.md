@@ -33,7 +33,7 @@ Ogni step è un command. In ordine:
 - **`FRAMEWORK.md`** — le 12 fasi, l'ordine dei sub-agent per tipo di progetto, e i comandi.
 - **`.claude/agents/`** — i sub-agent (descrizione + quando usarli nel frontmatter di ognuno).
 - **`CONNECTORS.md`** — ogni servizio: chiavi + cosa fare dentro.
-- **`directives/index.md`** — catalogo delle directives (procedure per fase).
+- **`directives/orchestrator_index.md`** — catalogo delle directives (procedure per fase).
 - **`LEARNINGS.md`** — lezioni dai feedback (lette a inizio progetto).
 - **`ROADMAP.md`** — stato + prossimi step del progetto corrente.
 

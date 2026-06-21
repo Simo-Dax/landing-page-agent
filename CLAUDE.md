@@ -32,7 +32,7 @@ tono e il posizionamento del brand non sono negoziabili.
 ## Come ragioni
 
 Quando ricevi un task:
-1. Leggi la direttiva corrispondente in `directives/` (consulta `directives/index.md`)
+1. Leggi la direttiva corrispondente in `directives/` (consulta `directives/orchestrator_index.md`)
 2. Carica il contesto necessario da `context/` (business, tone of voice, audience,
    traffico sorgente, obiettivo di conversione)
 3. Controlla se esistono già script o template in `execution/` che puoi riutilizzare
