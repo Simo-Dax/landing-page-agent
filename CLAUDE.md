@@ -59,7 +59,7 @@ Quando orchestri una fase, richiama **sempre** lo strumento giusto. Mappatura ca
 | 4 · Design System | `/brand-dna` | skill `design-system` + `ui-ux-pro-max` (intelligence) → scrive `DESIGN.md`. `firecrawl-website-design-clone` se cloni da un sito. |
 | 5 · Architettura/Wireframe | `/wireframe` | `directives/05_frontend_design`, `directives/09_marketing_psychology`, Figma MCP |
 | 6 · Copy | `/copy` | **Ricerca/benchmark:** `firecrawl-search`/`firecrawl-scrape`. **Scrittura:** `copywriting` + `directives/02_headline_optimization` + `directives/10_advanced_copywriting`. **Edit/humanize:** `copy-editing` + `context/brand/anti-ai-writing-style.md`. **Anti-slop:** `impeccable`. **Leve:** `marketing-psychology`. |
-| 7 · Build | `/build` | `directives/05_frontend_design`, `directives/06_web_artifacts`, `ui-styling`, `impeccable`, `directives/11_framer_motion` |
+| 7 · Build | `/build` | `directives/05_frontend_design`, `directives/06_web_artifacts`, `ui-styling`, `impeccable`, `directives/11_framer_motion`. **Stack React consigliato (default, adattabile):** React+TS, shadcn/ui, Tailwind (mobile-first), Lucide React, React Hook Form, calendari React Big Calendar/FullCalendar (vedi `design-build-agent`). |
 | 8 · Auth/login | `/auth-setup` | Clerk MCP (snippet SDK) — chiavi a mano |
 | 9 · Database/backend | `/db-setup` | **Supabase MCP** (in `.mcp.json`) |
 | 10 · QA & anti-slop | `/qa` | `impeccable`, `directives/07_vercel_guidelines`, `directives/03_editing_selfcheck` |

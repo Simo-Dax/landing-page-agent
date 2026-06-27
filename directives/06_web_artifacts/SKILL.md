@@ -64,9 +64,18 @@ Usa shadcn/ui per componenti comuni:
 - Form (con react-hook-form integration)
 
 ### Icons & Visual Assets
-- **Lucide React** per icone (preferito, già disponibile in artifacts)
+- **Lucide React** per icone (consigliato; se usato, tienilo come set unico)
 - **Hero Icons** (alternativa)
 - Evita immagini esterne: usa placeholder SVG o gradient backgrounds
+
+### Forms & Validation (consigliato)
+- **React Hook Form** come default per la validazione form — integrato con il componente `Form` di shadcn/ui
+- Validazione client-side + ri-validazione lato server/regole DB; stati visibili (errore, loading, success)
+- Non obbligatorio: adatta al caso (form semplici possono bastare con stato React nativo)
+
+### Calendar Views (se servono)
+- **React Big Calendar** come default; **FullCalendar** quando serve drag-drop avanzato o viste timeline
+- Scegline **una**, tematizzala sui token del design system
 
 ### Animations
 - **Tailwind transitions** per micro-interactions

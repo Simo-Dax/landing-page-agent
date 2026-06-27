@@ -53,6 +53,13 @@ Use when:
 - Minimal text, maximum visual impact
 - Systematic patterns and refined aesthetics
 
+### Companion Libraries (recommended default — adapt per case)
+Suggested front-end stack for this engine (see `.claude/agents/design-build-agent.md` → "Stack front-end consigliato"). These are **recommended, not mandatory** — a sensible starting point to pair with shadcn/ui + Tailwind, to adapt or swap when the case calls for it:
+- **React + TypeScript** — typed by default.
+- **Lucide React** — recommended icon set; if used, keep it the only one (avoid mixing icon libraries).
+- **React Hook Form** — recommended for form validation. Wire it through shadcn/ui `Form` components; validate client-side and re-validate server-side / via DB rules.
+- **Calendar views** (only when needed): **React Big Calendar** as default, **FullCalendar** when advanced drag-drop or timeline views are required. Pick one and theme it on the design tokens.
+
 ## Quick Start
 
 ### Component + Styling Setup
